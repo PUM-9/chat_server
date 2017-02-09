@@ -19,7 +19,7 @@ def run_server():
         messages = new_messages
         new_messages = list()
         for message in messages:
-            pub.publish(sender=message.sender, message=message.message)
+            pub.publish(sender=message[0], message=message[1])
         rate.sleep()
 
 if __name__ == "__main__":
