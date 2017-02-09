@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-
+print("hello")
+import sys
+print(sys.version)
 import rospy
 from chat_server.msg import Message
 
