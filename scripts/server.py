@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import rospy
-from chat_server.msg import Message
+from msg import Message
 
 new_messages = list()
 
