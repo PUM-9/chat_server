@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 import rospy
-import os
-print os.getcwd()
 from chat_server.msg import Message
 
 new_messages = list()
