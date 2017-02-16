@@ -22,7 +22,7 @@ def run_server():
     pub = rospy.Publisher('chat_out', Message, queue_size=10)
     rospy.init_node('chat_server', anonymous=False)
     rospy.Subscriber('chat_in', Message, callback)
-    s = rospy.Service('nmb_of_clients', NmbClients, get_nmbr_of_clients)
+    s = rospy.Service('nmb_clients', NmbClients, get_nmbr_of_clients)
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         messages = new_messages
