@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import rospy
 from chat_server.msg import Message
-from chat_server.srv import *
+from chat_server.srv import NmbClients
 
 new_messages = list()
 pub = None
