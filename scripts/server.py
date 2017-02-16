@@ -12,7 +12,7 @@ def callback(data):
 def run_server():
     global new_messages
     pub = rospy.Publisher('chat_out', Message, queue_size=10)
-    rospy.init_node('chat_server', anonymous=True)
+    rospy.init_node('chat_server', anonymous=False)
     rospy.Subscriber('chat_in', Message, callback)
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
